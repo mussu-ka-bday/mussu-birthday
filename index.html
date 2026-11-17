@@ -53,7 +53,8 @@ function next(){stage++;render()}
 function answer(n){if(n===1)score++;stage++;render()}
 function checkRiddle(){let v=(document.getElementById('riddle').value||'').trim().toLowerCase();if(['clock','a clock','watch','a watch'].includes(v)){score++;stage++;render()}else document.getElementById('riddleHint').textContent="Not quite! Hint: It has a face and hands. Try “clock”."}
 function wish(kind){const msgs={adventure:"May your year be full of beautiful places and stories.",laughter:"May your laugh be loud, frequent, and impossible to contain.",dreams:"May the things you quietly wish for find their way to you."};document.getElementById('finalNote').textContent=msgs[kind]+" And may you always know how loved you are. ❤️";stage++;render()}
-function reveal(){document.getElementById('reveal').classList.remove('hidden')}\nfunction openGift(){document.getElementById('gift').classList.remove('hidden')}
+function reveal(){document.getElementById('reveal').classList.remove('hidden')}
+function openGift(){document.getElementById('gift').classList.remove('hidden')}
 render();
 </script>
 </body></html>
